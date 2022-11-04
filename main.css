@@ -79,14 +79,12 @@ body {
 	background-color: rgba(0,0,0,.45);
 	position: relative;
 	z-index: 1;
-	height: 100px;
 }
 .brand-title {
 	font-size: 1.5rem;
 	margin: .5rem;
 	margin-left: 5rem;
 	padding: 0.5rem;
-	background-color:;
 	border-radius: 1px;
 }
 
