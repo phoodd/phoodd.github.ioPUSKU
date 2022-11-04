@@ -53,17 +53,23 @@ h6 {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 600;
 }
+a {
+	text-decoration: none;
+	color: white;
+}
 /* global color thing*/
 body {
     background-color: #222;
 }
-
+.broneer {
+	background-color: #212;
+	padding: 0.5rem;
+}
 .navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	color: white;
-	background-color: #224;
 }
 .brand-title {
 	font-size: 1.5rem;
@@ -135,3 +141,30 @@ body {
         display: flex;
     }
 }
+
+.carousel {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-image: url(pic/pic1.jpg);
+	opacity: 0.8;
+}
+.zoom {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 25s;
+	-animation-name: zoom;
+	-animation-duration: 25s;
+   }
+   
+   @keyframes zoom {
+	 to { transform: scale(1.7) } 
+   }
+   
+   @-webkit-keyframes zoom {
+	 to { transform: scale(1.7) } 
+   }
+   
+   @-moz-keyframes zoom {
+	 to { transform: scale(1.7) } 
+   }
