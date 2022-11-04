@@ -53,8 +53,9 @@ table {
 }
 h6 {
 	color: azure;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	font-weight: 600;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
 }
 a {
 	text-decoration: none;
@@ -64,14 +65,11 @@ h1 {
 	font-family: 'Quicksand', sans-serif;
 	color: white;
 	text-decoration: none;
+	font-size: larger;
 }
 /* global color thing*/
 body {
     background-color: #222;
-}
-.broneer {
-	background-color: #212;
-	padding: 0.5rem;
 }
 .navbar {
 	display: flex;
@@ -79,15 +77,25 @@ body {
 	align-items: center;
 	color: white;
 	background-color: rgba(0,0,0,.45);
+	position: relative;
+	z-index: 1;
+	height: 100px;
 }
 .brand-title {
 	font-size: 1.5rem;
 	margin: .5rem;
+	margin-left: 5rem;
+	padding: 0.5rem;
+	background-color:;
+	border-radius: 1px;
 }
+
 .navbar-links ul{
 	margin: 0;
 	padding: 0;
 	display: flex;
+	margin-right: 5rem;
+	gap: 1rem;
 }
 .navbar-links li {
 	list-style: none;
@@ -100,6 +108,7 @@ body {
 }
 .navbar-links li:hover {
 	background-color: #212;
+	transition: background-color 200ms;
 }
 
 .toggle-button {
@@ -150,13 +159,15 @@ body {
         display: flex;
     }
 }
-.arrow {
-display: flex;
-justify-content: center;
-filter: invert(1);
-height: 5rem;
-align-self: flex-end;
-animation: bob 3s ease-out infinite ;
+	.arrow {
+	display: flex;
+	justify-content: center;
+	filter: invert(0.8);
+	height: 5rem;
+	animation: bob 3s ease-out infinite ;
+	position: absolute;
+	bottom: 15px;
+	left: 47.8%;
 }
 @keyframes bob {
     0% { transform: translate(0,  0px); }
