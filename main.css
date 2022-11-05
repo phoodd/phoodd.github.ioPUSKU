@@ -258,9 +258,15 @@ body::-webkit-scrollbar {
 	height: 500px;
 	width: 666px;
 }
-.majutus {
+.majutus1 {
 	display: flex;
 	justify-content: space-evenly;
+}
+.majutushinnad {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0rem 19rem;
 }
 .tekst {
 	margin: 0rem 0rem 1rem 0rem;
@@ -272,7 +278,11 @@ body::-webkit-scrollbar {
 	align-items: left;
 	margin: 0 15rem;
 }
-.ktekst {	
+footer {
+	margin-top: 5rem;
+	height: 400px;
+	background-color: darkslategrey;
+	border-top: 1px solid black;
 }
 @media (max-width: 800px) {
 	body {
@@ -352,5 +362,11 @@ body::-webkit-scrollbar {
 	}
 	.kontakt {
 		margin: 0 2rem;
+	}
+	.majutus1 {
+		margin: 0rem 3rem 0rem 3rem;
+	}
+	.majutushinnad {
+		margin: 2rem 3rem 0rem 3rem;
 	}
 }
