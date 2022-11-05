@@ -254,8 +254,25 @@ body::-webkit-scrollbar {
 	align-items: center;
 
 }
+.teenusedpilt img{
+	height: 500px;
+	width: 666px;
+}
+.majutus {
+	display: flex;
+	justify-content: space-evenly;
+}
 .tekst {
 	margin: 0rem 0rem 1rem 0rem;
+}
+.kontakt {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: left;
+	margin: 0 15rem;
+}
+.ktekst {	
 }
 @media (max-width: 800px) {
 	body {
@@ -328,5 +345,12 @@ body::-webkit-scrollbar {
 	}
 	.arrow {
 		left: 32%;
+	}
+	.teenusedpilt img{
+		max-width: 100%;
+		height: auto;
+	}
+	.kontakt {
+		margin: 0 2rem;
 	}
 }
