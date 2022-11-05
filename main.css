@@ -80,7 +80,7 @@ p {
 }
 /* global color thing*/
 body {
-    background-color: #222;
+    background-color: black;
 }
 .navbar {
 	display: flex;
