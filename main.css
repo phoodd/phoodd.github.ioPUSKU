@@ -212,15 +212,15 @@ body {
    }
    
    @keyframes zoom {
-	 to { transform: scale(1.2) } 
+	 to { transform: scale(1.1) } 
    }
    
    @-webkit-keyframes zoom {
-	 to { transform: scale(1.2) } 
+	 to { transform: scale(1.1) } 
    }
    
    @-moz-keyframes zoom {
-	 to { transform: scale(1.2) } 
+	 to { transform: scale(1.1) } 
    }
 .line {
 	height: 1.5px;
