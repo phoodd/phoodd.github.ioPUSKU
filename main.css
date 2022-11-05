@@ -285,6 +285,10 @@ footer {
 	border-top: 1px solid black;
 }
 @media (max-width: 800px) {
+	.brand-title {
+		margin-left: 1rem;
+		margin-top: 6%;
+	}
 	body {
 		overflow: none;
 	}
@@ -303,6 +307,8 @@ footer {
 
     .toggle-button {
         display: flex;
+		margin-top: 6%;
+		margin-right: 4%;
     }
 
     .navbar-links {
@@ -313,6 +319,7 @@ footer {
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
+		margin-left: 25%;
     }
 
     .navbar-links ul li {
@@ -325,6 +332,7 @@ footer {
 
     .navbar-links.active {
         display: flex;
+		
     }
 	iframe {
 		max-height: 15rem;
