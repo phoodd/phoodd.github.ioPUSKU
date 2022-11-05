@@ -1,29 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+*{
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
+	border: none;
 	font: inherit;
 	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+	box-sizing: border-box;
 }
 body {
 	line-height: 1;
@@ -43,7 +26,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* global color thing*/
 .title {
     color: white;
@@ -76,7 +58,9 @@ p {
 	font-family: 'Quicksand', sans-serif;
 	color: black;
 	text-decoration: none;
-	font-size: larger;
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 130%;
 }
 /* global color thing*/
 body {
@@ -186,7 +170,7 @@ body {
 }
 .carousel-wrapper {
 	overflow: hidden;
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 100%;
 	top: 0;
@@ -196,9 +180,10 @@ body {
   
 .carousel {
 	z-index: -100;
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 100%;
+	top: 0;
 	background-position: center;
 	background-size: cover;
 	background-image: url(pic/pic1.jpg);
@@ -223,14 +208,14 @@ body {
 	 to { transform: scale(1.1) } 
    }
 .line {
-	height: 1.5px;
-	width: 35%;
+	height: 1px;
+	width: 100%;
 	background-color: rgba(0,0,0,.6);
 	margin-right: 2rem;
 }
 .line1 {
-	height: 1.5px;
-	width: 35%;
+	height: 1px;
+	width: 100%;
 	background-color: rgba(0,0,0,.6);
 	margin-left: 2rem;
 }
@@ -238,4 +223,12 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 3rem;
+	margin: 0px 10rem;
+}
+.asukoht {
+	margin: 2%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
 }
