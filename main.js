@@ -24,8 +24,17 @@ startCarousel = () => {
 
 
 
-function changePic(img){
-		let piccbig =	document.getElementById("piccbig");
-    piccbig.src = img;
-      piccbig.style.opacity = "1";
+  function changePic(img){
+    let piccbig = document.getElementById("piccbig");
+
+let { opacity } = piccbig.style;
+
+piccbig.src = img;
+opacity=0;
+let interval = setInterval(() => {
+  console.log("ran", opacity);
+  if(opacity >= 100) clearInterval(interval);
+  opacity = parseInt(opacity) + 25;
+}, 1000);
+  
 }

@@ -312,9 +312,6 @@ footer {
   .image-grid-row-2 {
 	grid-row: span 2;
   }
-  #piccbig {
-	transition: opacity 1 1s;
-  }
 @media (max-width: 800px) {
 	.image-grid {
 		--num-cols: 2;
