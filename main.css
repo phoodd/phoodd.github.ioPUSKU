@@ -139,16 +139,16 @@ body::-webkit-scrollbar {
     height: 6px;
   }
   body::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.603);
+    background: rgba(95, 95, 95, 0.603);
   }
   body::-webkit-scrollbar-thumb{
-    background: rgba(255, 255, 255, 0.705);
+    background: rgba(95, 95, 95, 0.685);
   }
   body::-webkit-scrollbar-thumb:hover{
-  	background: rgba(180, 180, 180, 0.685);
+  	background: rgba(59, 59, 59, 0.705);
   }
   body::-webkit-scrollbar-thumb:active{
-  	background: rgba(0,0,0,.9);
+  	background: rgba(32, 32, 32, 0.9);
   }
 	
 @keyframes bob {
@@ -174,7 +174,7 @@ body::-webkit-scrollbar {
 	top: 0;
 	background-position: center;
 	background-size: cover;
-	background-image: url(pic/pic1.jpg);
+	background-image: url(pic/psuku.jpg);
 	opacity: 0.8;
 }
 .zoom {
@@ -284,7 +284,39 @@ footer {
 	background-color: darkslategrey;
 	border-top: 1px solid black;
 }
+.image-grid {
+	--gap: 16px;
+	--num-cols: 6;
+	--row-height: 230px;
+  
+	box-sizing: border-box;
+	padding: var(--gap);
+  
+	display: grid;
+	grid-template-columns: repeat(var(--num-cols), 1fr);
+	grid-auto-rows: var(--row-height);
+	gap: var(--gap);
+	margin: 0px 5rem;
+  }
+  
+  .image-grid > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
+  .image-grid-col-2 {
+	grid-column: span 2;
+  }
+  
+  .image-grid-row-2 {
+	grid-row: span 2;
+  }
 @media (max-width: 800px) {
+	.image-grid {
+		--num-cols: 2;
+		--row-height: 100px;
+	  }
 	.brand-title {
 		margin-left: 1rem;
 		margin-top: 6%;

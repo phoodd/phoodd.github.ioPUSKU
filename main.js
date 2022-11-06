@@ -5,7 +5,7 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
 
-const images =["pic/pic1.jpg","pic/pic2.jpg","pic/pic3.jpg"];
+const images =["pic/psuku.jpg","pic/puskucrop11.jpg","pic/puskucrop3.jpg"];
 const carousel = document.querySelector(".carousel");
 const interval = setInterval(function() {
     startCarousel();
