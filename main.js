@@ -19,3 +19,13 @@ startCarousel = () => {
     carousel.classList.add("zoom");
     if(index > images.length - 1) index = 0;
   }
+
+
+
+
+
+function changePic(img){
+		let piccbig =	document.getElementById("piccbig");
+    piccbig.src = img;
+      piccbig.style.opacity = "1";
+}
