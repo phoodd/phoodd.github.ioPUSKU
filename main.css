@@ -281,10 +281,10 @@ body::-webkit-scrollbar {
 	align-items: flex-start;
 }
 .teenused {
-	margin: 5% 0 2% 7%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	margin: 3vw 0 3vw 0;
 
 }
 .teenusedpilt img{
@@ -315,7 +315,7 @@ body::-webkit-scrollbar {
 	margin: 2rem 0rem;
 }
 .tekst {
-	margin: 0rem 0rem 1rem 0rem;
+	margin: 0rem 0vw 0rem 0rem;
 }
 .kontakt {
 	display: flex;
