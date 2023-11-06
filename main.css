@@ -206,7 +206,7 @@ body::-webkit-scrollbar {
 	top: 0;
 	background-position: center;
 	background-size: cover;
-	background-image: url(pic/psuku.jpg);
+	background-image: url(images/psuku.jpg);
 	opacity: 0.8;
 }
 .zoom {
