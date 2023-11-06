@@ -401,6 +401,7 @@ body::-webkit-scrollbar {
 	h5 {
 		font-size: 2rem;
 		font-weight: 400;
+		margin: 0rem 0rem 1rem 0rem;
 	}
 	h4 {
 		font-size: 2rem;
